@@ -1,0 +1,9 @@
+{
+  "name": "design-systems",
+  "version": "1.0.0",
+  "description": "Build, document, and maintain scalable design systems — from tokens and components to accessibility and theming.",
+  "author": { "name": "Taikonauten", "url": "https://www.taikonauten.de" },
+  "keywords": ["design-systems", "tokens", "components", "accessibility", "theming"],
+  "homepage": "https://github.com/KayKazemi/taikonauten-skills",
+  "license": "MIT"
+}

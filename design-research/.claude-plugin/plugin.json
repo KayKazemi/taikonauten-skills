@@ -1,0 +1,18 @@
+{
+    "name": "design-research",
+    "version": "1.0.0",
+    "description": "User research skills for designers: personas, empathy maps, journey maps, interview scripts, usability testing, and card sorting.",
+    "author": {
+          "name": "Taikonauten",
+          "url": "https://www.taikonauten.de"
+    },
+    "keywords": [
+          "design",
+          "research",
+          "personas",
+          "journey-maps",
+          "usability-testing"
+    ],
+    "homepage": "https://github.com/KayKazemi/taikonauten-skills",
+    "license": "MIT"
+}

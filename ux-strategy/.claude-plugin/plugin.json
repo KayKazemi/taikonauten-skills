@@ -1,0 +1,9 @@
+{
+  "name": "ux-strategy",
+  "version": "1.0.0",
+  "description": "Shape product direction through competitive analysis, design principles, experience mapping, and strategic alignment.",
+  "author": { "name": "Taikonauten", "url": "https://www.taikonauten.de" },
+  "keywords": ["ux-strategy", "competitive-analysis", "design-principles", "vision", "alignment"],
+  "homepage": "https://github.com/KayKazemi/taikonauten-skills",
+  "license": "MIT"
+}

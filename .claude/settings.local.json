@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find /Users/aranoris/Sites/taikonauten-design-skills-main -name \"plugin.json\" -exec sed -i '' 's|https://github.com/Owl-Listener/designer-skills|https://www.taikonauten.de|g' {} \\\\;)",
+      "Bash(find /Users/aranoris/Sites/taikonauten-design-skills-main -name \"plugin.json\" -exec sed -i '' 's|\"homepage\": \"https://www.taikonauten.de\"|\"homepage\": \"https://github.com/KayKazemi/designer-skills\"|g' {} \\\\;)",
+      "Bash(find /Users/aranoris/Sites/taikonauten-design-skills-main -name \"plugin.json\" -exec sed -i '' 's|KayKazemi/designer-skills|KayKazemi/taikonauten-skills|g' {} \\\\;)"
+    ]
+  }
+}
