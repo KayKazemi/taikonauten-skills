@@ -1,0 +1,9 @@
+{
+  "name": "accessibility",
+  "version": "1.0.0",
+  "description": "Design inclusively and meet legal standards — WCAG 2.2, color contrast, screen reader UX, keyboard navigation, ARIA patterns, and German BFSG compliance.",
+  "author": { "name": "Taikonauten", "url": "https://www.taikonauten.de" },
+  "keywords": ["accessibility", "wcag", "a11y", "screen-reader", "keyboard-navigation", "bfsg", "inclusive-design"],
+  "homepage": "https://github.com/KayKazemi/taikonauten-skills",
+  "license": "MIT"
+}

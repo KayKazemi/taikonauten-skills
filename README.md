@@ -1,17 +1,21 @@
-# Designer Skills Collection
-Agentic skills, commands, and plugins for design — from research to systems, UI, interaction, and delivery.
-**63 skills** and **27 commands** across **8 plugins** for [Claude Code](https://docs.anthropic.com/en/docs/claude-code).
+# Taikonauten Skills
+Agentic skills, commands, and plugins for design — from research and strategy to brand identity, motion, accessibility, and delivery.
+**90 skills** and **34 commands** across **12 plugins** for [Claude Code](https://docs.anthropic.com/en/docs/claude-code).
 ## Plugins
 | Plugin | Skills | Commands | Description |
 |--------|--------|----------|-------------|
 | [design-research](./design-research) | 10 | 4 | User research: personas, empathy maps, journey maps, interviews, usability testing, and card sorting. |
 | [design-systems](./design-systems) | 8 | 3 | Build and maintain design systems: tokens, components, accessibility, theming, and documentation. |
-| [ux-strategy](./ux-strategy) | 8 | 3 | Shape product direction: competitive analysis, design principles, experience mapping, and alignment. |
+| [ux-strategy](./ux-strategy) | 9 | 3 | Shape product direction: competitive analysis, market positioning, design principles, experience mapping, and alignment. |
 | [ui-design](./ui-design) | 9 | 4 | Craft polished interfaces: layout grids, color systems, typography, responsive design, and data viz. |
 | [interaction-design](./interaction-design) | 7 | 3 | Design meaningful interactions: micro-animations, state machines, gestures, error handling, and feedback. |
 | [prototyping-testing](./prototyping-testing) | 8 | 4 | Validate designs: prototyping strategies, usability testing, heuristic evaluation, and A/B experiments. |
-| [design-ops](./design-ops) | 7 | 3 | Streamline operations: critique frameworks, handoff specs, sprint planning, and team workflows. |
-| [designer-toolkit](./designer-toolkit) | 6 | 3 | Essential utilities: design rationale, presentations, case studies, UX writing, and system adoption. |
+| [design-ops](./design-ops) | 9 | 3 | Streamline operations: critique frameworks, handoff specs, sprint planning, client feedback, and revision workflows. |
+| [designer-toolkit](./designer-toolkit) | 7 | 4 | Essential utilities: design rationale, presentations, pitch decks, case studies, UX writing, and system adoption. |
+| [brand-identity](./brand-identity) | 7 | 3 | Build brand identities: strategy, visual systems, logo systems, guidelines, voice, and typographic identity. |
+| [client-pitch](./client-pitch) | 6 | 3 | Win and manage client work: proposals, scoping, briefing, kickoff facilitation, pitch structure, and feedback. |
+| [motion-design](./motion-design) | 6 | 3 | Design meaningful motion: principles, scroll animation, transition systems, hero animations, and brand motion. |
+| [accessibility](./accessibility) | 7 | 3 | Design inclusively and meet legal standards: WCAG 2.2, screen reader UX, keyboard navigation, ARIA, and BFSG. |
 ## Quick Start
 
 ### Step 1: Add the Marketplace
@@ -32,7 +36,7 @@ Open the plugin manager and browse available plugins:
 /plugin
 ```
 
-Go to the **Discover** tab to see all 8 design plugins, then select and install the ones you want.
+Go to the **Discover** tab to see all 12 design plugins, then select and install the ones you want.
 
 ## What Are Skills and Commands?
 - **Skills** are domain knowledge units (nouns). They teach Claude about a design topic — like creating user personas, defining design tokens, or writing error messages.
@@ -67,6 +71,19 @@ Go to the **Discover** tab to see all 8 design plugins, then select and install 
 | `/designer-toolkit:write-rationale` | designer-toolkit | Write design rationale for decisions. |
 | `/designer-toolkit:build-presentation` | designer-toolkit | Structure a design presentation. |
 | `/designer-toolkit:write-case-study` | designer-toolkit | Create a portfolio case study. |
+| `/designer-toolkit:write-pitch` | designer-toolkit | Build a complete pitch deck for new business or a design proposal. |
+| `/brand-identity:brand-audit` | brand-identity | Audit an existing brand for consistency and strategic clarity. |
+| `/brand-identity:create-identity` | brand-identity | Create a complete visual identity from brand strategy. |
+| `/brand-identity:define-voice` | brand-identity | Define brand voice, tone, and messaging framework. |
+| `/client-pitch:write-proposal` | client-pitch | Write a complete client proposal from a brief. |
+| `/client-pitch:run-kickoff` | client-pitch | Prepare and facilitate a project kickoff. |
+| `/client-pitch:scope-project` | client-pitch | Define and document full project scope. |
+| `/motion-design:design-motion` | motion-design | Design a complete motion system for a product. |
+| `/motion-design:motion-audit` | motion-design | Audit existing motion for consistency and performance impact. |
+| `/motion-design:animate-transition` | motion-design | Design transitions between specific states or pages. |
+| `/accessibility:accessibility-audit` | accessibility | Run a full accessibility audit across a product or component. |
+| `/accessibility:wcag-review` | accessibility | Review designs against WCAG 2.2 AA criteria. |
+| `/accessibility:inclusive-review` | accessibility | Review designs across disability types for inclusive coverage. |
 ## Contributing
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines on adding new skills, commands, and plugins.
 ## License

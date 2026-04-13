@@ -1,0 +1,9 @@
+{
+  "name": "brand-identity",
+  "version": "1.0.0",
+  "description": "Build and articulate brand identities — from strategy and positioning to visual systems, guidelines, voice, and typographic identity.",
+  "author": { "name": "Taikonauten", "url": "https://www.taikonauten.de" },
+  "keywords": ["brand-identity", "visual-identity", "brand-strategy", "logo", "brand-guidelines", "brand-voice"],
+  "homepage": "https://github.com/KayKazemi/taikonauten-skills",
+  "license": "MIT"
+}

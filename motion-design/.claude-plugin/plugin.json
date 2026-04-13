@@ -1,0 +1,9 @@
+{
+  "name": "motion-design",
+  "version": "1.0.0",
+  "description": "Design meaningful motion — principles, scroll animation, transition systems, hero animations, brand motion language, and loading patterns.",
+  "author": { "name": "Taikonauten", "url": "https://www.taikonauten.de" },
+  "keywords": ["motion-design", "animation", "transitions", "scroll", "brand-motion", "loading"],
+  "homepage": "https://github.com/KayKazemi/taikonauten-skills",
+  "license": "MIT"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "client-pitch",
+  "version": "1.0.0",
+  "description": "Win and manage client work — proposal writing, project scoping, client briefing, kickoff facilitation, pitch structure, and feedback management.",
+  "author": { "name": "Taikonauten", "url": "https://www.taikonauten.de" },
+  "keywords": ["client-pitch", "proposals", "scoping", "kickoff", "feedback", "agency"],
+  "homepage": "https://github.com/KayKazemi/taikonauten-skills",
+  "license": "MIT"
+}

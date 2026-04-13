@@ -1,10 +1,19 @@
 ---
 description: Prepare an interview script or summarize an interview transcript into structured insights.
-argument-hint: [research goals for script, OR paste/attach transcript to summarize]
+argument-hint: "[research goals for script, OR paste/attach transcript to summarize]"
 ---
 
-Prepare for or synthesize user interviews:
+# /interview
 
-- If the user wants to **prepare**: Use the `interview-script` skill to create a structured interview script with warm-up, core exploration, and wrap-up sections.
-- If the user provides a **transcript**: Use the `summarize-interview` skill to extract themes, quotes, pain points, and action items.
-- After completion, suggest: "Want me to `/synthesize` to build an affinity diagram from multiple interviews?" or "Want me to `/discover` to create personas from these findings?"
+Prepare for or synthesize a user interview.
+
+## Steps
+
+- **If preparing**: Use the `interview-script` skill to create a structured interview script for $ARGUMENTS with warm-up, core exploration, and wrap-up sections.
+- **If summarizing**: Use the `summarize-interview` skill to extract key themes, quotes, pain points, and action items from a provided transcript.
+
+## Output
+
+Either a structured interview script ready for fieldwork, or a synthesized interview summary with themes, quotes, and design implications.
+
+Consider following up with `/design-research:synthesize` to build an affinity diagram from multiple interviews, or `/design-research:discover` to develop personas from these findings.
