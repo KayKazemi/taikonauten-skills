@@ -24,3 +24,11 @@ You establish naming conventions that make design systems predictable, searchabl
 - Automate name linting
 - Use prefixes for sorting and grouping
 - Review names in team critiques
+
+## Figma Integration
+When a Figma file URL is provided, use `get_design_context` and `get_metadata` to read actual layer names, component names, and page structure from the file. Audit what's there against the naming convention patterns — flag deviations (visual property names, inconsistent separators, ambiguous abbreviations) and generate a corrected naming map alongside the convention documentation.
+
+If the user has not provided a Figma URL, ask before proceeding:
+> "Do you have a Figma file? Sharing the URL lets me inspect your actual layer and component names, audit them against the convention, and flag what needs to change."
+
+If the user confirms they don't have one, produce the naming convention rules and examples without an audit pass.

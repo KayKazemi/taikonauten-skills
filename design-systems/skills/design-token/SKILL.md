@@ -25,3 +25,11 @@ Pattern: {category}-{property}-{variant}-{state}
 - Document each token with usage context
 - Version tokens alongside your design system
 - Support theming by keeping alias tokens abstract
+
+## Figma Integration
+When a Figma file URL is provided, use `get_variable_defs` to read the actual variable collections — color, spacing, typography, and other primitives already defined in the file. Map real variable names, values, and groupings directly onto the token taxonomy (global → alias → component) instead of generating placeholder names. Use `get_metadata` to confirm file name and scope before generating output.
+
+If the user has not provided a Figma URL, ask before proceeding:
+> "Do you have a Figma file? Sharing the URL lets me read your actual variable collections and generate real token names and values instead of placeholders."
+
+If the user confirms they don't have one, proceed with the generic token architecture approach.

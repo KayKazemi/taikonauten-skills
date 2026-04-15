@@ -22,3 +22,11 @@ Navigation, input, display, feedback, onboarding
 - Include real examples and anti-patterns
 - Connect patterns into a knowledge graph
 - Update as research reveals new insights
+
+## Figma Integration
+When a Figma file URL is provided, use `search_design_system` to discover what components and patterns already exist in the file. Use `get_design_context` on specific components to inspect their anatomy, variants, and composition. Write pattern library entries grounded in the real components rather than abstract descriptions — include the actual component name as the canonical reference.
+
+If the user has not provided a Figma URL, ask before proceeding:
+> "Do you have a Figma file? Sharing the URL lets me search your existing components and base the pattern library entries on what's actually built instead of describing patterns generically."
+
+If the user confirms they don't have one, produce the pattern entry structure with abstract examples.

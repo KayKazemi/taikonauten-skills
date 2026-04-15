@@ -32,3 +32,11 @@ Data visualization colors, illustration colors, gradient definitions.
 - Provide usage guidance for each color
 - Design for color blindness (test with simulators)
 - Include dark mode mappings from the start
+
+## Figma Integration
+When a Figma file URL is provided, use `get_variable_defs` to extract color variable collections (brand palette, neutrals, semantic colors, dark mode overrides). Use `get_design_context` on a representative frame to see how colors are applied across surfaces, text, and components. Build the system documentation from the real values rather than generating placeholder swatches.
+
+If the user has not provided a Figma URL, ask before proceeding:
+> "Do you have a Figma file? Sharing the URL lets me read your actual color variables and styles to document the real palette instead of generating placeholder swatches."
+
+If the user confirms they don't have one, proceed with the generic color system approach.

@@ -36,3 +36,11 @@ Choose a base unit (typically 4px or 8px) and build a scale:
 - Larger gaps between unrelated groups
 - Document spacing intent, not just values
 - Test spacing at different viewport sizes
+
+## Figma Integration
+When a Figma file URL is provided, use `get_variable_defs` to extract any spacing variable collections already defined in the file — including base unit, named scale steps, and contextual inset/stack/inline variants. Derive the system from what exists rather than generating a generic scale. Use `get_design_context` on a representative frame to verify how spacing is applied in practice.
+
+If the user has not provided a Figma URL, ask before proceeding:
+> "Do you have a Figma file? Sharing the URL lets me read your existing spacing variables and build the system from your actual values instead of a generic scale."
+
+If the user confirms they don't have one, proceed with the generic spacing system approach.

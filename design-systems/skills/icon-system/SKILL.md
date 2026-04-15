@@ -25,3 +25,11 @@ SVG source, sprite sheets, component wrappers, Figma library
 - Establish contribution workflow
 - Version alongside design system
 - Test at every supported size
+
+## Figma Integration
+When a Figma file URL is provided, use `search_design_system` to inventory the icons already present in the library — count, categories, and naming patterns. Use `get_design_context` on the icon component set to inspect grid spec, stroke settings, size variants, and how keywords/descriptions are applied. Generate the icon system spec from what's actually in the file, not a generic template.
+
+If the user has not provided a Figma URL, ask before proceeding:
+> "Do you have a Figma file with your icon library? Sharing the URL lets me inventory what's there and base the system spec on your real icon set."
+
+If the user confirms they don't have one, proceed with the generic icon system spec approach.

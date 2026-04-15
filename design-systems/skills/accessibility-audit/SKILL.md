@@ -24,3 +24,11 @@ Description, location, WCAG criterion, severity, impact, remediation steps, code
 - Audit across devices and browsers
 - Check static and interactive states
 - Prioritize by severity and user impact
+
+## Figma Integration
+When a Figma file URL is provided, use `get_screenshot` to visually inspect screens and components for perceivability issues (contrast, text sizing, icon legibility, information hierarchy). Use `get_variable_defs` to extract color values and run contrast ratio checks against WCAG 2.2 AA thresholds. Use `get_design_context` to inspect layer structure, reading order, and whether accessibility annotations (ARIA labels, focus order, alt text notes) are present.
+
+If the user has not provided a Figma URL, ask before proceeding:
+> "Do you have a Figma file? Sharing the URL lets me visually inspect the designs, check real color contrast values, and review the layer structure for accessibility issues rather than auditing a description."
+
+If the user confirms they don't have one, proceed with an audit based on the described design or provided screenshots.

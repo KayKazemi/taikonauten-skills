@@ -44,3 +44,11 @@ You create handoff documents that give developers everything needed to implement
 - Include all states, not just the happy path
 - Provide redlines for complex layouts
 - Walk through the handoff with the developer
+
+## Figma Integration
+When a Figma frame or component URL is provided, use `get_design_context` to read actual measurements, layer names, spacing values, and auto-layout properties from the target frame. Use `get_screenshot` to capture a visual reference to include in the spec. Use `get_variable_defs` to resolve token references for colors, spacing, and typography — so the handoff cites token names rather than raw values.
+
+If the user has not provided a Figma URL, ask before proceeding:
+> "Do you have a Figma file? Linking to the specific frame or component lets me extract real measurements, token references, and layer structure to produce a precise handoff spec instead of a template."
+
+If the user confirms they don't have one, proceed with the generic handoff spec approach.

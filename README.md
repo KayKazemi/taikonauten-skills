@@ -16,6 +16,24 @@ Agentic skills, commands, and plugins for design — from research and strategy 
 | [client-pitch](./client-pitch) | 6 | 3 | Win and manage client work: proposals, scoping, briefing, kickoff facilitation, pitch structure, and feedback. |
 | [motion-design](./motion-design) | 6 | 3 | Design meaningful motion: principles, scroll animation, transition systems, hero animations, and brand motion. |
 | [accessibility](./accessibility) | 7 | 3 | Design inclusively and meet legal standards: WCAG 2.2, screen reader UX, keyboard navigation, ARIA, and BFSG. |
+## Figma Integration
+10 skills are enhanced with live Figma file inspection via the [Figma MCP](https://www.figma.com/developers/mcp). When the Figma MCP is connected, these skills read real variables, components, and design context directly from your files — so output is grounded in your actual design, not generated from templates.
+
+**Setup:** Add the Figma MCP in your Claude Code MCP settings. Once connected, skills will proactively ask for a Figma URL if you don't provide one, then fall back to the generic approach if you don't have a file.
+
+| Skill | Plugin | What Figma unlocks |
+|-------|--------|--------------------|
+| `design-token` | design-systems | Reads variable collections → real token names and values |
+| `component-spec` | design-systems | Inspects component layer structure, variants, and token references |
+| `naming-convention` | design-systems | Audits actual layer and component names against the convention |
+| `pattern-library` | design-systems | Searches and inventories existing components in the design system |
+| `icon-system` | design-systems | Inventories icon count, categories, and grid spec from the library |
+| `accessibility-audit` | design-systems | Visual inspection, real contrast values, and layer structure review |
+| `color-system` | ui-design | Extracts palette from color variable collections and applied styles |
+| `typography-scale` | ui-design | Reads text styles and typography variables from the file |
+| `spacing-system` | ui-design | Pulls spacing variables and verifies scale against applied layouts |
+| `handoff-spec` | design-ops | Reads measurements, token references, and layout from the target frame |
+
 ## Quick Start
 
 ### Step 1: Add the Marketplace
