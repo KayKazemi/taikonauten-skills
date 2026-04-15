@@ -1,108 +1,291 @@
+<div align="center">
+
 # Taikonauten Skills
-Agentic skills, commands, and plugins for design — from research and strategy to brand identity, motion, accessibility, and delivery.
-**90 skills** and **34 commands** across **12 plugins** for [Claude Code](https://docs.anthropic.com/en/docs/claude-code).
-## Plugins
-| Plugin | Skills | Commands | Description |
-|--------|--------|----------|-------------|
-| [design-research](./design-research) | 10 | 4 | User research: personas, empathy maps, journey maps, interviews, usability testing, and card sorting. |
-| [design-systems](./design-systems) | 8 | 3 | Build and maintain design systems: tokens, components, accessibility, theming, and documentation. |
-| [ux-strategy](./ux-strategy) | 9 | 3 | Shape product direction: competitive analysis, market positioning, design principles, experience mapping, and alignment. |
-| [ui-design](./ui-design) | 9 | 4 | Craft polished interfaces: layout grids, color systems, typography, responsive design, and data viz. |
-| [interaction-design](./interaction-design) | 7 | 3 | Design meaningful interactions: micro-animations, state machines, gestures, error handling, and feedback. |
-| [prototyping-testing](./prototyping-testing) | 8 | 4 | Validate designs: prototyping strategies, usability testing, heuristic evaluation, and A/B experiments. |
-| [design-ops](./design-ops) | 9 | 3 | Streamline operations: critique frameworks, handoff specs, sprint planning, client feedback, and revision workflows. |
-| [designer-toolkit](./designer-toolkit) | 7 | 4 | Essential utilities: design rationale, presentations, pitch decks, case studies, UX writing, and system adoption. |
-| [brand-identity](./brand-identity) | 7 | 3 | Build brand identities: strategy, visual systems, logo systems, guidelines, voice, and typographic identity. |
-| [client-pitch](./client-pitch) | 6 | 3 | Win and manage client work: proposals, scoping, briefing, kickoff facilitation, pitch structure, and feedback. |
-| [motion-design](./motion-design) | 6 | 3 | Design meaningful motion: principles, scroll animation, transition systems, hero animations, and brand motion. |
-| [accessibility](./accessibility) | 7 | 3 | Design inclusively and meet legal standards: WCAG 2.2, screen reader UX, keyboard navigation, ARIA, and BFSG. |
-## Figma Integration
-10 skills are enhanced with live Figma file inspection via the [Figma MCP](https://www.figma.com/developers/mcp). When the Figma MCP is connected, these skills read real variables, components, and design context directly from your files — so output is grounded in your actual design, not generated from templates.
 
-**Setup:** Add the Figma MCP in your Claude Code MCP settings. Once connected, skills will proactively ask for a Figma URL if you don't provide one, then fall back to the generic approach if you don't have a file.
+Design intelligence for Claude Code.
+Ask it to build your token system, write a component spec, run an accessibility audit,
+structure a client pitch — and get output that reflects how designers actually think and work.
 
-| Skill | Plugin | What Figma unlocks |
-|-------|--------|--------------------|
-| `design-token` | design-systems | Reads variable collections → real token names and values |
-| `component-spec` | design-systems | Inspects component layer structure, variants, and token references |
-| `naming-convention` | design-systems | Audits actual layer and component names against the convention |
-| `pattern-library` | design-systems | Searches and inventories existing components in the design system |
-| `icon-system` | design-systems | Inventories icon count, categories, and grid spec from the library |
-| `accessibility-audit` | design-systems | Visual inspection, real contrast values, and layer structure review |
-| `color-system` | ui-design | Extracts palette from color variable collections and applied styles |
-| `typography-scale` | ui-design | Reads text styles and typography variables from the file |
-| `spacing-system` | ui-design | Pulls spacing variables and verifies scale against applied layouts |
-| `handoff-spec` | design-ops | Reads measurements, token references, and layout from the target frame |
+**90 skills · 34 commands · 12 plugins**
 
-## Quick Start
+[Get started](#getting-started) · [Browse plugins](#plugins) · [Connect Figma](#figma-integration) · [All commands](#commands)
 
-### Step 1: Add the Marketplace
+</div>
 
-In Claude Code, run:
+---
+
+This is a plugin collection for [Claude Code](https://docs.anthropic.com/en/docs/claude-code). Each **skill** is a concentrated unit of design expertise — not generic AI output. Each **command** chains skills into a complete workflow you can run in one line.
+
+Install only the plugins that match your discipline. You don't need everything.
+
+---
+
+## Getting Started
+
+Two steps. Under a minute.
+
+**1 — Add the marketplace**
 
 ```
 /plugin marketplace add KayKazemi/taikonauten-skills
 ```
 
-This registers the marketplace so you can browse and install individual plugins.
-
-### Step 2: Install Plugins
-
-Open the plugin manager and browse available plugins:
+**2 — Install what you need**
 
 ```
 /plugin
 ```
 
-Go to the **Discover** tab to see all 12 design plugins, then select and install the ones you want.
+Open the **Discover** tab, browse all 12 plugins, and install the ones relevant to your work.
 
-## What Are Skills and Commands?
-- **Skills** are domain knowledge units (nouns). They teach Claude about a design topic — like creating user personas, defining design tokens, or writing error messages.
-- **Commands** are workflows (verbs). They chain multiple skills together to accomplish a task — like running a full design system audit or planning a usability test.
-## All Commands
-| Command | Plugin | Description |
-|---------|--------|-------------|
-| `/design-research:discover` | design-research | Run a full user research discovery cycle. |
-| `/design-research:interview` | design-research | Prepare and conduct a user interview. |
-| `/design-research:test-plan` | design-research | Create a usability test plan. |
-| `/design-research:synthesize` | design-research | Synthesize research data into insights. |
-| `/design-systems:audit-system` | design-systems | Audit a design system for consistency and accessibility. |
-| `/design-systems:create-component` | design-systems | Scaffold a full component specification. |
-| `/design-systems:tokenize` | design-systems | Extract and organize design tokens. |
-| `/ux-strategy:strategize` | ux-strategy | Develop a complete UX strategy. |
-| `/ux-strategy:benchmark` | ux-strategy | Run a competitive benchmarking analysis. |
-| `/ux-strategy:frame-problem` | ux-strategy | Structure an ambiguous challenge into a clear problem. |
-| `/ui-design:design-screen` | ui-design | Design a complete screen layout. |
-| `/ui-design:color-palette` | ui-design | Generate a full color palette with accessibility checks. |
-| `/ui-design:type-system` | ui-design | Create a complete typography system. |
-| `/ui-design:responsive-audit` | ui-design | Audit a design for responsive behavior. |
-| `/interaction-design:design-interaction` | interaction-design | Design a complete interaction flow. |
-| `/interaction-design:map-states` | interaction-design | Model states and transitions for a component. |
-| `/interaction-design:error-flow` | interaction-design | Design error handling for a feature. |
-| `/prototyping-testing:prototype-plan` | prototyping-testing | Create a prototyping and testing plan. |
-| `/prototyping-testing:evaluate` | prototyping-testing | Run a heuristic evaluation. |
-| `/prototyping-testing:test-plan` | prototyping-testing | Design a complete usability testing plan. |
-| `/prototyping-testing:experiment` | prototyping-testing | Design an A/B experiment. |
-| `/design-ops:plan-sprint` | design-ops | Plan a design sprint. |
-| `/design-ops:handoff` | design-ops | Generate a developer handoff package. |
-| `/design-ops:setup-workflow` | design-ops | Set up a design team workflow. |
-| `/designer-toolkit:write-rationale` | designer-toolkit | Write design rationale for decisions. |
-| `/designer-toolkit:build-presentation` | designer-toolkit | Structure a design presentation. |
-| `/designer-toolkit:write-case-study` | designer-toolkit | Create a portfolio case study. |
-| `/designer-toolkit:write-pitch` | designer-toolkit | Build a complete pitch deck for new business or a design proposal. |
-| `/brand-identity:brand-audit` | brand-identity | Audit an existing brand for consistency and strategic clarity. |
-| `/brand-identity:create-identity` | brand-identity | Create a complete visual identity from brand strategy. |
-| `/brand-identity:define-voice` | brand-identity | Define brand voice, tone, and messaging framework. |
-| `/client-pitch:write-proposal` | client-pitch | Write a complete client proposal from a brief. |
-| `/client-pitch:run-kickoff` | client-pitch | Prepare and facilitate a project kickoff. |
-| `/client-pitch:scope-project` | client-pitch | Define and document full project scope. |
-| `/motion-design:design-motion` | motion-design | Design a complete motion system for a product. |
-| `/motion-design:motion-audit` | motion-design | Audit existing motion for consistency and performance impact. |
-| `/motion-design:animate-transition` | motion-design | Design transitions between specific states or pages. |
-| `/accessibility:accessibility-audit` | accessibility | Run a full accessibility audit across a product or component. |
-| `/accessibility:wcag-review` | accessibility | Review designs against WCAG 2.2 AA criteria. |
-| `/accessibility:inclusive-review` | accessibility | Review designs across disability types for inclusive coverage. |
+---
+
+## Plugins
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### Research
+[design-research](./design-research) · 10 skills · 4 commands
+
+Build your research foundation. Personas, empathy maps, journey maps, interview scripts, usability test plans, card sort analysis. Start a project right.
+
+</td>
+<td width="50%" valign="top">
+
+### Design Systems
+[design-systems](./design-systems) · 8 skills · 3 commands
+
+Define the source of truth. Design tokens, component specs, naming conventions, pattern libraries, icon systems, accessibility auditing. Connect directly to Figma variables.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### UX Strategy
+[ux-strategy](./ux-strategy) · 9 skills · 3 commands
+
+Shape what gets built. Competitive analysis, market positioning, design principles, experience mapping, stakeholder alignment. Frame the problem before solving it.
+
+</td>
+<td width="50%" valign="top">
+
+### UI Design
+[ui-design](./ui-design) · 9 skills · 4 commands
+
+Craft the visual layer. Color systems, typography scales, spacing systems, layout grids, responsive design, data visualization. Ground every decision in a system.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### Interaction Design
+[interaction-design](./interaction-design) · 7 skills · 3 commands
+
+Design what happens between states. Micro-interaction specs, state machines, gesture patterns, error handling, animation principles, loading patterns.
+
+</td>
+<td width="50%" valign="top">
+
+### Prototyping & Testing
+[prototyping-testing](./prototyping-testing) · 8 skills · 4 commands
+
+Validate before you ship. Prototype strategies, usability testing, heuristic evaluation, A/B experiments, user flow diagrams, wireframe specs.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### Design Ops
+[design-ops](./design-ops) · 9 skills · 3 commands
+
+Keep the work moving. Handoff specs, critique frameworks, sprint planning, feedback management, revision workflows, QA checklists.
+
+</td>
+<td width="50%" valign="top">
+
+### Designer Toolkit
+[designer-toolkit](./designer-toolkit) · 7 skills · 4 commands
+
+The work around the work. Design rationale, presentations, pitch decks, case studies, UX writing, design system adoption guides.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### Brand Identity
+[brand-identity](./brand-identity) · 7 skills · 3 commands
+
+Build something lasting. Brand strategy, logo systems, color identity, typography identity, brand voice, visual guidelines.
+
+</td>
+<td width="50%" valign="top">
+
+### Client Pitch
+[client-pitch](./client-pitch) · 6 skills · 3 commands
+
+Win the room. Proposals, project scoping, client briefing, kickoff facilitation, pitch structure, feedback management.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### Motion Design
+[motion-design](./motion-design) · 6 skills · 3 commands
+
+Make it feel alive. Motion principles, scroll animation, transition systems, hero animations, brand motion, loading animation.
+
+</td>
+<td width="50%" valign="top">
+
+### Accessibility
+[accessibility](./accessibility) · 7 skills · 3 commands
+
+Design for everyone. WCAG 2.2, screen reader UX, keyboard navigation, ARIA patterns, focus management, BFSG compliance.
+
+</td>
+</tr>
+</table>
+
+---
+
+## Figma Integration
+
+10 skills can read directly from your Figma files when the [Figma MCP](https://www.figma.com/developers/mcp) is connected. Instead of generating placeholders, they pull your actual variables, components, and design context — so what comes out reflects what's actually in your file.
+
+**Setup:** Add the Figma MCP in Claude Code's MCP settings. Once connected, these skills will ask for a Figma URL if you don't provide one, and fall back to the generic approach if you don't have a file yet.
+
+| Skill | What Figma unlocks |
+|-------|--------------------|
+| `design-token` | Reads your variable collections → real token names and values, no placeholders |
+| `component-spec` | Inspects actual layer structure, variants, and token references |
+| `color-system` | Extracts your palette from color variables and applied styles |
+| `typography-scale` | Reads text styles and type variables directly from the file |
+| `spacing-system` | Pulls spacing variables and verifies them against applied layouts |
+| `handoff-spec` | Reads measurements, token references, and layout from the target frame |
+| `naming-convention` | Audits your actual layer and component names, not a hypothetical |
+| `pattern-library` | Searches and inventories existing components in your design system |
+| `icon-system` | Inventories icon count, categories, and grid spec from your library |
+| `accessibility-audit` | Visual inspection, real contrast values, and layer structure review |
+
+---
+
+## Commands
+
+Commands chain skills together into a complete workflow — one line, one outcome.
+
+**Design Research**
+
+| Command | What it does |
+|---------|-------------|
+| `/design-research:discover` | Run a full user research discovery cycle |
+| `/design-research:interview` | Prepare and conduct a user interview |
+| `/design-research:test-plan` | Create a usability test plan |
+| `/design-research:synthesize` | Synthesize research data into insights |
+
+**Design Systems**
+
+| Command | What it does |
+|---------|-------------|
+| `/design-systems:audit-system` | Audit a design system for consistency and accessibility |
+| `/design-systems:create-component` | Scaffold a full component specification |
+| `/design-systems:tokenize` | Extract and organize design tokens |
+
+**UX Strategy**
+
+| Command | What it does |
+|---------|-------------|
+| `/ux-strategy:strategize` | Develop a complete UX strategy |
+| `/ux-strategy:benchmark` | Run a competitive benchmarking analysis |
+| `/ux-strategy:frame-problem` | Structure an ambiguous challenge into a clear problem |
+
+**UI Design**
+
+| Command | What it does |
+|---------|-------------|
+| `/ui-design:design-screen` | Design a complete screen layout |
+| `/ui-design:color-palette` | Generate a full color palette with accessibility checks |
+| `/ui-design:type-system` | Create a complete typography system |
+| `/ui-design:responsive-audit` | Audit a design for responsive behavior |
+
+**Interaction Design**
+
+| Command | What it does |
+|---------|-------------|
+| `/interaction-design:design-interaction` | Design a complete interaction flow |
+| `/interaction-design:map-states` | Model states and transitions for a component |
+| `/interaction-design:error-flow` | Design error handling for a feature |
+
+**Prototyping & Testing**
+
+| Command | What it does |
+|---------|-------------|
+| `/prototyping-testing:prototype-plan` | Create a prototyping and testing plan |
+| `/prototyping-testing:evaluate` | Run a heuristic evaluation |
+| `/prototyping-testing:test-plan` | Design a complete usability testing plan |
+| `/prototyping-testing:experiment` | Design an A/B experiment |
+
+**Design Ops**
+
+| Command | What it does |
+|---------|-------------|
+| `/design-ops:plan-sprint` | Plan a design sprint |
+| `/design-ops:handoff` | Generate a developer handoff package |
+| `/design-ops:setup-workflow` | Set up a design team workflow |
+
+**Designer Toolkit**
+
+| Command | What it does |
+|---------|-------------|
+| `/designer-toolkit:write-rationale` | Write design rationale for decisions |
+| `/designer-toolkit:build-presentation` | Structure a design presentation |
+| `/designer-toolkit:write-case-study` | Create a portfolio case study |
+| `/designer-toolkit:write-pitch` | Build a complete pitch deck |
+
+**Brand Identity**
+
+| Command | What it does |
+|---------|-------------|
+| `/brand-identity:brand-audit` | Audit an existing brand for consistency and strategic clarity |
+| `/brand-identity:create-identity` | Create a complete visual identity from brand strategy |
+| `/brand-identity:define-voice` | Define brand voice, tone, and messaging framework |
+
+**Client Pitch**
+
+| Command | What it does |
+|---------|-------------|
+| `/client-pitch:write-proposal` | Write a complete client proposal from a brief |
+| `/client-pitch:run-kickoff` | Prepare and facilitate a project kickoff |
+| `/client-pitch:scope-project` | Define and document full project scope |
+
+**Motion Design**
+
+| Command | What it does |
+|---------|-------------|
+| `/motion-design:design-motion` | Design a complete motion system for a product |
+| `/motion-design:motion-audit` | Audit existing motion for consistency and performance impact |
+| `/motion-design:animate-transition` | Design transitions between specific states or pages |
+
+**Accessibility**
+
+| Command | What it does |
+|---------|-------------|
+| `/accessibility:accessibility-audit` | Run a full accessibility audit across a product or component |
+| `/accessibility:wcag-review` | Review designs against WCAG 2.2 AA criteria |
+| `/accessibility:inclusive-review` | Review designs across disability types for inclusive coverage |
+
+---
+
 ## Contributing
+
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines on adding new skills, commands, and plugins.
+
 ## License
+
 MIT — see [LICENSE](./LICENSE).
