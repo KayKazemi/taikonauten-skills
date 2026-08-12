@@ -67,20 +67,6 @@ If the user has not provided a Figma URL, ask before proceeding:
 
 If the user confirms they don't have one, proceed with an audit based on the described design or provided screenshots.
 
-## Execution Instructions & Output Format
-
-When this skill is invoked via `/accessibility-audit` on a selected Figma frame or design:
-1. **Analyze Design Context:** Visually inspect the frame. Check text contrast, color usage (e.g., info banners), font sizes, and layout hierarchy.
-2. **Structure the Audit Report:** You must generate the final report **directly on the canvas** as a beautifully formatted, modern UI dashboard (similar to a professional slide deck or document layout).
-3. **Canvas Layout Requirements:** Create a main container frame with a clean grid containing:
-   - **Header Section:** "Accessibility Audit: BARMER Homepage" + Date + Compliance Level (WCAG 2.2 AA / BFSG).
-   - **Executive Summary:** A high-level overview of the screen's health.
-   - **Findings Matrix Table:** A clean, horizontal row-based layout or multi-card layout displaying each identified issue.
-4. **Issue Detail Requirements:** For every accessibility issue found, clearly display:
-   - **Issue Name & Severity Badge:** (e.g., "Critical" in a soft red badge, "Major" in orange).
-   - **WCAG Criterion:** (e.g., Ref: 1.4.3 Contrast).
-   - **UX Impact & Remediation:** Clear instructions on how to fix it (e.g., suggest the exact compliant HEX code).
-
 ## Build
 
 Use the `figma-use` skill to materialize this as a new frame on the current page in the active Figma file, named `accessibility-audit — [input]`. Lay it out as a polished one-page document: an eyebrow label, bold headline, and meta line at the top; numbered sections with clear typographic hierarchy; tables for structured or comparative data; and colored status badges or callout boxes to highlight key points, severity, or priority where relevant. Build incrementally and verify the result with a screenshot before finishing.
